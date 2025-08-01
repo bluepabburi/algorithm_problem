@@ -11,3 +11,5 @@ def solution(k, m, score):
         price += score[i] * m
 
     return price
+
+# 테스트
