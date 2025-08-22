@@ -29,4 +29,4 @@ def tag_func(tag, text):
 h1_func = tag_func('title', "This is Python Class")  
 p_func = tag_func('p', "Data Academy") 
 
-print(h1_func)
+print(p_func())

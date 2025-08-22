@@ -62,31 +62,31 @@
     
 #     return answer
 
-def solution(n, w, num):
-    box_line = []
-    total_rows = (n + w - 1) // w
+# def solution(n, w, num):
+#     box_line = []
+#     total_rows = (n + w - 1) // w
 
-    for i in range(n):
-        if i % w == 0:
-            box_line.append([])
+#     for i in range(n):
+#         if i % w == 0:
+#             box_line.append([])
 
-        row = len(box_line) - 1
+#         row = len(box_line) - 1
 
-        if row % 2 == 0:
-            box_line[row].append(i + 1)
-        else:
-            box_line[row].insert(0, i + 1)
+#         if row % 2 == 0:
+#             box_line[row].append(i + 1)
+#         else:
+#             box_line[row].insert(0, i + 1)
 
-    box_line.reverse()
+#     box_line.reverse()
 
-    for i in range(len(box_line)):
-        for j in range(len(box_line[i])):
-            if box_line[i][j] == num:
-                answer = i + 1
-                print(answer)
-                return answer
+#     for i in range(len(box_line)):
+#         for j in range(len(box_line[i])):
+#             if box_line[i][j] == num:
+#                 answer = i + 1
+#                 print(answer)
+#                 return answer
 
-    return 0
+#     return 0
 
 
-a = (solution(29, 5, 1))
+a = (solution(29, 5))
