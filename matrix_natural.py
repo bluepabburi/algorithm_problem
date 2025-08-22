@@ -5,7 +5,7 @@ def solution(n):
 
     for i in range(len(sen)):
         
-        ans.insert(0, int(sen[i]))
+        ans.insert(0,int(sen[i]))
     
     print(ans)
     
